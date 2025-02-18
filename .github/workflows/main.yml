@@ -1,0 +1,25 @@
+name: Deploy to Shared Hosting Prod
+
+on:
+  push:
+    branches:
+      - main # Deploy only when changes are pushed to the main branch
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checkout code
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # Upload via FTP
+      - name: Deploy to FTP server
+        uses: SamKirkland/FTP-Deploy-Action@4.3.1
+        with:
+          server: ftp5.aftermarket.hosting
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          server-dir: /public_html/wp-content/ # wp-content/ added
+          local-dir: ./ # Local directory (default is root of repo)
