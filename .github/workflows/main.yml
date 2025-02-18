@@ -21,5 +21,5 @@ jobs:
           server: ftp5.aftermarket.hosting
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          server-dir: /public_html/wp-content/ # wp-content/ added
+          server-dir: /public_html/
           local-dir: ./ # Local directory (default is root of repo)
