@@ -3,9 +3,6 @@
 
 <head>
 	<title>Michał Polak – Trener Boksu i Kickboxingu | Wielokrotny Medalista</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
 	<!-- SEO podstawowe -->
 	<meta name="description"
 		content="Michał Polak – wielokrotny medalista w kickboxingu, profesjonalny trener boksu i kickboxingu. Treningi indywidualne i grupowe dla każdego poziomu zaawansowania.">
@@ -29,127 +26,85 @@
 		content="Wielokrotny medalista w kickboxingu. Profesjonalne treningi boksu i kickboxingu.">
 	<meta name="twitter:image" content="img/3.jpg">
 
-	<link href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-
-	<link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
-	<link rel="stylesheet" href="css/animate.css">
-
-	<link rel="stylesheet" href="css/owl.carousel.min.css">
-	<link rel="stylesheet" href="css/owl.theme.default.min.css">
-	<link rel="stylesheet" href="css/magnific-popup.css">
-
-	<link rel="stylesheet" href="css/aos.css">
-
-	<link rel="stylesheet" href="css/ionicons.min.css">
-
-	<link rel="stylesheet" href="css/bootstrap-datepicker.css">
-	<link rel="stylesheet" href="css/jquery.timepicker.css">
-
-
-	<link rel="stylesheet" href="css/flaticon.css">
-	<link rel="stylesheet" href="css/icomoon.css">
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="icon" href="favicon-16x16.png" type="image/png" sizes="16x16">
-	<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+	<!-- @include head.html -->
 </head>
 
 <body>
-	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
-		<div class="container">
-			<a class="navbar-brand" href="index.html">Michał Polak</a>
-
-			<div class="collapse navbar-collapse" id="ftco-nav">
-				<ul class="navbar-nav ml-auto">
-				</ul>
-			</div>
-		</div>
-	</nav>
-	<!-- END nav -->
-
-
-	<section class="hero-wrap js-fullheight">
-		<div class="overlay" style="background-image: url(images/bg_2.jpg);" data-stellar-background-ratio="0.5"></div>
-		<div class="container">
-			<div class="row no-gutters slider-text js-fullheight align-items-center justify-content-end">
-				<div class="col-md-12 text-center ftco-animate">
-					<h1 class="mt-5" style="background-image: url(img/12.jpg);" data-stellar-background-ratio="0.5">
-						FIGHT<br>HUB</h1>
-					<h2>Michał Polak. Trener sportów walki.</h2>
-				</div>
+	<!-- Hero -->
+	<section data-fullheight class="relative h-screen overflow-hidden bg-black">
+		<div data-parallax="0.5" data-parallax-min="1200" class="absolute inset-y-0 right-0 w-1/2 bg-cover bg-center xl:bg-top" style="background-image: url(/images/bg_2.jpg);"></div>
+		<div class="wrap relative flex h-full items-center">
+			<div data-reveal class="w-full text-center">
+				<h1 data-parallax="0.5" data-parallax-min="1200" class="mt-12 bg-cover bg-center bg-clip-text text-[22vw] leading-[0.8] font-black text-transparent uppercase sm:text-[100px] md:text-[180px] lg:text-[300px]" style="background-image: url(/img/12.jpg);">
+					Fight<br>Hub</h1>
+				<h2 class="text-sm font-black tracking-[5px] uppercase">Michał Polak. Trener sportów walki.</h2>
 			</div>
 		</div>
 	</section>
 
-	<section class="ftco-section ftco-no-pb ftco-no-pt">
-
-		<div class="container">
-			<div class="row justify-content-center mb-5">
-				<div class="col-md-7 heading-section text-center ftco-animate">
-					<span class="subheading">
-						<i class="db-left"></i>
-						kim jestem
-						<i class="db-right"></i>
-					</span>
-					<h2 class="mb-3">Kim jestem</h2>
-					<p class="about-lead">W świecie sportów walki jestem od ponad 13 lat, stawiając swoje pierwsze kroki w kickboxingu/K1,
-						które finalnie stały się najbliższe mojemu sercu.</p>
-				</div>
+	<!-- Kim jestem -->
+	<section>
+		<div class="wrap">
+			<div data-reveal class="mx-auto mb-12 text-center md:w-7/12">
+				<!-- @include eyebrow.html text="kim jestem" -->
+				<h2 class="mb-4 text-[28px] font-bold uppercase md:text-[34px]">Kim jestem</h2>
+				<p class="text-[19px] text-white/80">W świecie sportów walki jestem od ponad 13 lat, stawiając swoje pierwsze kroki w kickboxingu/K1,
+					które finalnie stały się najbliższe mojemu sercu.</p>
 			</div>
-			<div class="row">
-				<div class="col-md-6 img img-2 order-md-last" style='background-image: url(img/12.jpg);'>
-				</div>
-				<div class="col-md-6 py-5">
-					<div class="program d-flex ftco-animate">
-						<div class="icon d-flex mr-lg-3 justify-content-center align-items-center order-lg-last">
-							<span class="flaticon-gym"></span>
+			<div class="md:-mx-[15px] md:flex">
+				<div class="h-[400px] bg-cover bg-top md:order-last md:h-auto md:w-1/2 md:bg-center" style="background-image: url(/img/12.jpg);"></div>
+				<div class="py-12 md:w-1/2 md:px-[15px]">
+					<div data-reveal class="mb-10 flex items-start">
+						<div class="bg-accent flex h-[85px] w-[105px] shrink-0 items-center justify-center rounded-full text-white lg:order-last lg:mr-4">
+							<svg class="size-10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3h7a5 5 0 0 1 5 5v5a3 3 0 0 1-3 3H8a4 4 0 0 1-4-4V6a3 3 0 0 1 3-3z"/><path d="M4 10h3a2 2 0 0 0 2-2V7"/><rect x="7" y="16" width="10" height="5" rx="1"/></svg>
 						</div>
-						<div class="text ml-5 mr-lg-4 text-lg-right">
-							<h3>Boks</h3>
+						<div class="ml-12 flex-1 lg:mr-6 lg:text-right">
+							<h3 class="text-xl font-extrabold tracking-[1px] uppercase">Boks</h3>
 							<p>Przez wszystkie te lata nie ograniczałem się jednak jedynie do tej dyscypliny decydując
 								się na liczne starty w boksie jaki odgrywał istotną rolę w przygotowaniach do każdej z
 								walk kickboxerskich.</p>
 						</div>
 					</div>
-					<div class="program d-flex ftco-animate">
-						<div class="icon d-flex mr-lg-3 justify-content-center align-items-center order-lg-last">
-							<span class="flaticon-woman"></span>
+					<div data-reveal class="mb-10 flex items-start">
+						<div class="bg-accent flex h-[85px] w-[105px] shrink-0 items-center justify-center rounded-full text-white lg:order-last lg:mr-4">
+							<svg class="size-10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c0 1.5 2.7 3 6 3s6-1.5 6-3v-5"/><path d="M22 10v6"/></svg>
 						</div>
-						<div class="text ml-5 mr-lg-4 text-lg-right">
-							<h3>Wykształcenie</h3>
+						<div class="ml-12 flex-1 lg:mr-6 lg:text-right">
+							<h3 class="text-xl font-extrabold tracking-[1px] uppercase">Wykształcenie</h3>
 							<p>Wraz z karierą sportową nabywałem kwalifikacji trenerskich kończąc między innymi studia
 								wychowania fizycznego z tytułem magistra czy kurs instruktorski z ramienia Polskiego
 								Związku Kickboxingu wydany przez Ministerstwo Sportu i Turystyki.</p>
 						</div>
 					</div>
-					<div class="program d-flex ftco-animate">
-						<div class="icon d-flex mr-lg-3 justify-content-center align-items-center order-lg-last">
-							<span class="flaticon-workout"></span>
+					<div data-reveal class="mb-10 flex items-start">
+						<div class="bg-accent flex h-[85px] w-[105px] shrink-0 items-center justify-center rounded-full text-white lg:order-last lg:mr-4">
+							<svg class="size-10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 21h8M12 17v4"/><path d="M7 4h10v5a5 5 0 0 1-10 0V4z"/><path d="M17 5h3v2a3 3 0 0 1-3 3M7 5H4v2a3 3 0 0 0 3 3"/></svg>
 						</div>
-						<div class="text ml-5 mr-lg-4 text-lg-right">
-							<h3>Osiągnięcia</h3>
+						<div class="ml-12 flex-1 lg:mr-6 lg:text-right">
+							<h3 class="text-xl font-extrabold tracking-[1px] uppercase">Osiągnięcia</h3>
 							<p>Lata przygody sportowej wykorzystywałem maksymalnie, stając 14- krotnie na podium
 								Mistrzostw Polski w różnych formułach kickboxingu w tym 6 razy zajmując najwyższe z
 								nich, reprezentując tym samym kraj na imprezach takich jak Mistrzostwa Świata,
 								Mistrzostwa Europy, Puchary Świata oraz Puchary Europy.</p>
 						</div>
 					</div>
-					<div class="program d-flex ftco-animate">
-						<div class="icon d-flex mr-lg-3 justify-content-center align-items-center order-lg-last">
-							<span class="flaticon-meditation"></span>
+					<div data-reveal class="mb-10 flex items-start">
+						<div class="bg-accent flex h-[85px] w-[105px] shrink-0 items-center justify-center rounded-full text-white lg:order-last lg:mr-4">
+							<svg class="size-10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
 						</div>
-						<div class="text ml-5 mr-lg-4 text-lg-right">
-							<h3>Doświadczenie</h3>
+						<div class="ml-12 flex-1 lg:mr-6 lg:text-right">
+							<h3 class="text-xl font-extrabold tracking-[1px] uppercase">Doświadczenie</h3>
 							<p>Ponadto ostatnie kilka lat poświęciłem zawodowstwu udając się do kolebki światowego K1 by
 								zbierać doświadczenie od najlepszych zawodników globu , wynikiem czego było podpisanie
 								kontraktu z ówcześnie największą organizacją promująca kickboxing w Polsce.</p>
 						</div>
 					</div>
-					<div class="program d-flex ftco-animate">
-						<div class="icon d-flex mr-lg-3 justify-content-center align-items-center order-lg-last">
-							<span class="flaticon-stationary-bike"></span>
+					<div data-reveal class="mb-10 flex items-start">
+						<div class="bg-accent flex h-[85px] w-[105px] shrink-0 items-center justify-center rounded-full text-white lg:order-last lg:mr-4">
+							<svg class="size-10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
 						</div>
-						<div class="text ml-5 mr-lg-4 text-lg-right">
-							<h3>Misja</h3>
+						<div class="ml-12 flex-1 lg:mr-6 lg:text-right">
+							<h3 class="text-xl font-extrabold tracking-[1px] uppercase">Misja</h3>
 							<p>Dzisiaj czerpię ogromną satysfakcję z możliwości przekazywania nabytej wiedzy, radując
 								się wraz z podopiecznymi efektem naszej wspólnej pracy.</p>
 						</div>
@@ -159,327 +114,144 @@
 		</div>
 	</section>
 
-	<section class="ftco-section">
-		<div class="container pricing-container">
-			<div class="row justify-content-center mb-5">
-				<div class="col-md-10 heading-section text-center ftco-animate">
-					<span class="subheading">
-						<i class="db-left"></i>
-						Cennik zajęć
-						<i class="db-right"></i>
-					</span>
-					<h2 class="mb-3">Cennik zajęć</h2>
-				</div>
+	<!-- Cennik -->
+	<section class="py-[6em] md:py-[7em]">
+		<div class="wrap-wide">
+			<div data-reveal class="mx-auto mb-12 text-center md:w-10/12">
+				<!-- @include eyebrow.html text="Cennik zajęć" -->
+				<h2 class="mb-4 text-[28px] font-bold uppercase md:text-[34px]">Cennik zajęć</h2>
 			</div>
-			<div class="row justify-content-center">
-				<div class="col-md-6 col-xl-4">
-
-					<div class="pricing-wrap ftco-animate img" style="background-image: url(img/7.jpg);">
-						<a href="dzieci.html">
-							<div class="text p-4 d-flex align-items-end">
-								<div>
-									<span class="price">60min/200zł</span>
-									<h3>Zajęcia z dziećmi <span>Wiek 5+</span></h3>
-									<p class="text-white">Czas trwania zajęć to 60 minut podczas, których skupiamy się
+			<div class="-mx-[15px] flex flex-wrap justify-center">
+				<a data-reveal href="dzieci.html" class="relative mb-[30px] block h-[500px] w-full overflow-hidden bg-cover bg-center px-[15px] md:w-1/2 xl:w-1/3" style="background-image: url(/img/7.jpg); background-clip: content-box;">
+					<div class="absolute inset-y-0 inset-x-[15px] flex items-end border border-brand bg-black/60 p-6">
+						<div>
+							<span class="text-accent block text-[34px] leading-[1.4] font-extrabold xl:text-[26px]">60min/200zł</span>
+							<h3 class="text-xl font-bold uppercase xl:text-[17px]">Zajęcia z dziećmi <span class="text-muted">Wiek 5+</span></h3>
+							<p class="mb-4 text-white xl:text-base xl:leading-[1.6]">Czas trwania zajęć to 60 minut podczas, których skupiamy się
 										na różnego rodzaju formach treningu ogólnorozwojowego wdrażając w to elementy
 										kickboxingu, boksu czy k1. Głównym celem tego rodzaju aktywności jest
 										usprawnienie oraz nabycie podstawowych umiejętności z dziedziny uderzanych
 										sportów walki. Ponadto tego rodzaju formy spędzania wolnego czasu mogą stanowić
 										ujście dla kłębiących się trudnych emocji u najmłodszych.</p>
-								</div>
-							</div>
-						</a>
+						</div>
 					</div>
-
-				</div>
-				<div class="col-md-6 col-xl-4">
-					<div class="pricing-wrap ftco-animate img" style="background-image: url(img/6.jpg);">
-						<a href="dorosli.html">
-							<div class="text p-4 d-flex align-items-end">
-								<div>
-									<span class="price">60min/200zł 2os. 240zł</span>
-									<h3>Zajęcia z dorosłymi <span>Możliwość zajęć w parach</span></h3>
-									<p class="text-white">Trening ten to minimum godzina zorientowana na potrzeby
+				</a>
+				<a data-reveal href="dorosli.html" class="relative mb-[30px] block h-[500px] w-full overflow-hidden bg-cover bg-center px-[15px] md:w-1/2 xl:w-1/3" style="background-image: url(/img/6.jpg); background-clip: content-box;">
+					<div class="absolute inset-y-0 inset-x-[15px] flex items-end border border-brand bg-black/60 p-6">
+						<div>
+							<span class="text-accent block text-[34px] leading-[1.4] font-extrabold xl:text-[26px]">60min/200zł 2os. 240zł</span>
+							<h3 class="text-xl font-bold uppercase xl:text-[17px]">Zajęcia z dorosłymi <span class="text-muted">Możliwość zajęć w parach</span></h3>
+							<p class="mb-4 text-white xl:text-base xl:leading-[1.6]">Trening ten to minimum godzina zorientowana na potrzeby
 										każdego z ich uczestników. Po uprzednim ustaleniu kierunku pracy, wspólnie
 										przechodzimy do jej realizacji. Tutaj możesz spodziewać się w zależności od
 										potrzeb: zagłębiania się w techniczne niuanse każdego z nabywanych wzorców
-										ruchowych, po intensywną prace wytrzymałościowo – siłową, kończąc na praktyce.
-									</p>
-								</div>
-							</div>
-						</a>
+										ruchowych, po intensywną prace wytrzymałościowo – siłową, kończąc na praktyce.</p>
+						</div>
 					</div>
-				</div>
-				<div class="col-md-6 col-xl-4">
-					<div class="pricing-wrap ftco-animate img" style="background-image: url(img/ojcowie-synowie.jpg);">
-						<a href="ojcowie.html">
-							<div class="text p-4 d-flex align-items-end">
-								<div>
-									<span class="price">60min/240zł</span>
-									<h3>Zajęcia ojców z synami <span>Wspólny trening</span></h3>
-									<p class="text-white">Zajęcia kierowane są nie bez przyczyny do ojców i ich synów.
+				</a>
+				<a data-reveal href="ojcowie.html" class="relative mb-[30px] block h-[500px] w-full overflow-hidden bg-cover bg-center px-[15px] md:w-1/2 xl:w-1/3" style="background-image: url(/img/ojcowie-synowie.jpg); background-clip: content-box;">
+					<div class="absolute inset-y-0 inset-x-[15px] flex items-end border border-brand bg-black/60 p-6">
+						<div>
+							<span class="text-accent block text-[34px] leading-[1.4] font-extrabold xl:text-[26px]">60min/240zł</span>
+							<h3 class="text-xl font-bold uppercase xl:text-[17px]">Zajęcia ojców z synami <span class="text-muted">Wspólny trening</span></h3>
+							<p class="mb-4 text-white xl:text-base xl:leading-[1.6]">Zajęcia kierowane są nie bez przyczyny do ojców i ich synów.
 										Trening tego rodzaju jest dopasowany do możliwości uczestników, a moim zadaniem
 										jest koordynować go w taki sposób, by zarówno synowie, jak i ojcowie mogli się
 										zmęczyć, pobawić oraz nauczyć podstaw uderzanych sportów walki.</p>
-								</div>
-							</div>
-						</a>
+						</div>
 					</div>
+				</a>
+			</div>
+		</div>
+	</section>
+
+	<!-- Osiągnięcia -->
+	<section data-parallax="0.5" class="relative bg-cover bg-center py-[6em] md:py-[7em]" style="background-image: url(/img/14_bw.jpg);">
+		<div class="absolute inset-0 bg-black/70"></div>
+		<div class="wrap relative">
+			<div data-reveal class="mx-auto mb-12 text-center md:w-7/12">
+				<!-- @include eyebrow.html text="Osiągnięcia" -->
+				<h2 class="mb-4 text-[28px] font-bold uppercase md:text-[34px]">Osiągnięcia</h2>
+				<p>Lata przygody sportowej wykorzystywałem maksymalnie, stając 14- krotnie na podium Mistrzostw
+					Polski w różnych formułach kickboxingu w tym 6 razy zajmując najwyższe z nich, reprezentując tym
+					samym kraj na imprezach takich jak Mistrzostwa Świata, Mistrzostwa Europy, Puchary Świata oraz
+					Puchary Europy.</p>
+			</div>
+			<div data-reveal class="mx-auto md:w-8/12">
+				<div data-carousel class="grid">
+						<div data-slide data-active class="invisible pt-6 pb-12 text-center text-white/70 opacity-0 transition-all duration-600 [grid-area:1/1] data-active:visible data-active:opacity-100">
+							<div class="relative mx-auto mb-6 size-[100px] rounded-full bg-cover bg-center" style="background-image: url(/img/6.jpg);">
+								<span class="bg-accent absolute right-0 -bottom-2.5 flex size-10 items-center justify-center rounded-full text-white">
+									<svg class="size-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M10 11H6a4 4 0 0 1 4-4V5a6 6 0 0 0-6 6v8h6v-8zm10 0h-4a4 4 0 0 1 4-4V5a6 6 0 0 0-6 6v8h6v-8z"/></svg>
+								</span>
+							</div>
+							<p class="mb-6">Magister wychowania fizycznego / 13 letnie doświadczenie zawodnicze / 6 krotny Mistrz Polski</p>
+						</div>
+						<div data-slide class="invisible pt-6 pb-12 text-center text-white/70 opacity-0 transition-all duration-600 [grid-area:1/1] data-active:visible data-active:opacity-100">
+							<div class="relative mx-auto mb-6 size-[100px] rounded-full bg-cover bg-center" style="background-image: url(/img/6.jpg);">
+								<span class="bg-accent absolute right-0 -bottom-2.5 flex size-10 items-center justify-center rounded-full text-white">
+									<svg class="size-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M10 11H6a4 4 0 0 1 4-4V5a6 6 0 0 0-6 6v8h6v-8zm10 0h-4a4 4 0 0 1 4-4V5a6 6 0 0 0-6 6v8h6v-8z"/></svg>
+								</span>
+							</div>
+							<p class="mb-6">Uprawnienia Instruktorskie / przeszło 130 walk</p>
+						</div>
+						<div data-slide class="invisible pt-6 pb-12 text-center text-white/70 opacity-0 transition-all duration-600 [grid-area:1/1] data-active:visible data-active:opacity-100">
+							<div class="relative mx-auto mb-6 size-[100px] rounded-full bg-cover bg-center" style="background-image: url(/img/6.jpg);">
+								<span class="bg-accent absolute right-0 -bottom-2.5 flex size-10 items-center justify-center rounded-full text-white">
+									<svg class="size-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M10 11H6a4 4 0 0 1 4-4V5a6 6 0 0 0-6 6v8h6v-8zm10 0h-4a4 4 0 0 1 4-4V5a6 6 0 0 0-6 6v8h6v-8z"/></svg>
+								</span>
+							</div>
+							<p class="mb-6">Srebrny medalista Pucharu Europy/Brązowy medalista Pucharu Świata / Międzynarodowe doświadczenie</p>
+						</div>
+						<div data-slide class="invisible pt-6 pb-12 text-center text-white/70 opacity-0 transition-all duration-600 [grid-area:1/1] data-active:visible data-active:opacity-100">
+							<div class="relative mx-auto mb-6 size-[100px] rounded-full bg-cover bg-center" style="background-image: url(/img/6.jpg);">
+								<span class="bg-accent absolute right-0 -bottom-2.5 flex size-10 items-center justify-center rounded-full text-white">
+									<svg class="size-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M10 11H6a4 4 0 0 1 4-4V5a6 6 0 0 0-6 6v8h6v-8zm10 0h-4a4 4 0 0 1 4-4V5a6 6 0 0 0-6 6v8h6v-8z"/></svg>
+								</span>
+							</div>
+							<p class="mb-6">Zawodowy kontrakt z największą ówcześnie organizacją w kraju</p>
+						</div>
+						<div data-slide class="invisible pt-6 pb-12 text-center text-white/70 opacity-0 transition-all duration-600 [grid-area:1/1] data-active:visible data-active:opacity-100">
+							<div class="relative mx-auto mb-6 size-[100px] rounded-full bg-cover bg-center" style="background-image: url(/img/6.jpg);">
+								<span class="bg-accent absolute right-0 -bottom-2.5 flex size-10 items-center justify-center rounded-full text-white">
+									<svg class="size-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M10 11H6a4 4 0 0 1 4-4V5a6 6 0 0 0-6 6v8h6v-8zm10 0h-4a4 4 0 0 1 4-4V5a6 6 0 0 0-6 6v8h6v-8z"/></svg>
+								</span>
+							</div>
+							<p class="mb-6">Były członek kadry narodowej</p>
+						</div>
+					<div class="pb-4 text-center [grid-area:2/1]"><button type="button" data-dot data-active aria-label="Slajd 1" class="m-[5px] size-2.5 cursor-pointer rounded-full bg-white/10 data-active:bg-[linear-gradient(45deg,#ff0055,#ff6600)]"></button><button type="button" data-dot aria-label="Slajd 2" class="m-[5px] size-2.5 cursor-pointer rounded-full bg-white/10 data-active:bg-[linear-gradient(45deg,#ff0055,#ff6600)]"></button><button type="button" data-dot aria-label="Slajd 3" class="m-[5px] size-2.5 cursor-pointer rounded-full bg-white/10 data-active:bg-[linear-gradient(45deg,#ff0055,#ff6600)]"></button><button type="button" data-dot aria-label="Slajd 4" class="m-[5px] size-2.5 cursor-pointer rounded-full bg-white/10 data-active:bg-[linear-gradient(45deg,#ff0055,#ff6600)]"></button><button type="button" data-dot aria-label="Slajd 5" class="m-[5px] size-2.5 cursor-pointer rounded-full bg-white/10 data-active:bg-[linear-gradient(45deg,#ff0055,#ff6600)]"></button></div>
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<section class="ftco-section testimony-section" style="background-image: url(img/14_bw.jpg);"
-		data-stellar-background-ratio="0.5">
-		<div class="overlay"></div>
-		<div class="container">
-			<div class="row justify-content-center mb-5">
-				<div class="col-md-7 heading-section text-center ftco-animate">
-					<span class="subheading">
-						<i class="db-left"></i>
-						Osiągnięcia
-						<i class="db-right"></i>
-					</span>
-					<h2 class="mb-3">Osiągnięcia</h2>
-					<p>Lata przygody sportowej wykorzystywałem maksymalnie, stając 14- krotnie na podium Mistrzostw
-						Polski w różnych formułach kickboxingu w tym 6 razy zajmując najwyższe z nich, reprezentując tym
-						samym kraj na imprezach takich jak Mistrzostwa Świata, Mistrzostwa Europy, Puchary Świata oraz
-						Puchary Europy.</p>
+	<!-- Kontakt -->
+	<section class="bg-black">
+		<div data-reveal class="p-5 md:py-[7%] md:pr-[12%] md:pl-[5%]">
+			<h2 class="mb-4 text-[28px] font-bold uppercase md:text-[34px]">Napisz do mnie</h2>
+			<p>W celu ustalenia terminu zadzwoń pod numer <a href="tel:+48513588131" class="font-bold text-white hover:text-brand">513 588 131</a>
+				lub skorzystaj z poniższego formularza</p>
+			<form action="https://formspree.io/f/xaykeypw" method="POST" class="grid gap-x-6 gap-y-4 md:grid-cols-2">
+				<input type="hidden" name="_language" value="pl">
+				<label class="block"><span class="sr-only">Imię</span>
+					<input type="text" name="name" required placeholder="Imię" autocomplete="given-name" class="h-[58px] w-full border-0 border-b border-white/20 bg-transparent text-[13px] text-white/90 placeholder:text-white/90 focus:border-white focus:outline-none"></label>
+				<label class="block"><span class="sr-only">Nazwisko</span>
+					<input type="text" name="lastname" placeholder="Nazwisko" autocomplete="family-name" class="h-[58px] w-full border-0 border-b border-white/20 bg-transparent text-[13px] text-white/90 placeholder:text-white/90 focus:border-white focus:outline-none"></label>
+				<label class="block"><span class="sr-only">Email</span>
+					<input type="email" name="email" required placeholder="Email" autocomplete="email" class="h-[58px] w-full border-0 border-b border-white/20 bg-transparent text-[13px] text-white/90 placeholder:text-white/90 focus:border-white focus:outline-none"></label>
+				<label class="block"><span class="sr-only">Telefon</span>
+					<input type="tel" name="phone" placeholder="Telefon" autocomplete="tel" class="h-[58px] w-full border-0 border-b border-white/20 bg-transparent text-[13px] text-white/90 placeholder:text-white/90 focus:border-white focus:outline-none"></label>
+				<label class="block"><span class="sr-only">Wiadomość</span>
+					<textarea name="message" required rows="2" placeholder="Wiadomość" class="w-full border-0 border-b border-white/20 bg-transparent text-[13px] text-white/90 placeholder:text-white/90 focus:border-white focus:outline-none py-3"></textarea></label>
+				<div>
+					<button type="submit" class="bg-accent w-full cursor-pointer px-6 py-4 text-[13px] font-medium text-white transition-opacity hover:opacity-85">Wyślij</button>
 				</div>
-			</div>
-			<div class="row justify-content-center">
-				<div class="col-md-8 ftco-animate">
-					<div class="row ftco-animate">
-						<div class="col-md-12">
-							<div class="carousel-testimony owl-carousel ftco-owl">
-								<div class="item">
-									<div class="testimony-wrap py-4 pb-5">
-										<div class="user-img mb-4" style="background-image: url(img/6.jpg)">
-											<span class="quote d-flex align-items-center justify-content-center">
-												<i class="icon-quote-left"></i>
-											</span>
-										</div>
-										<div class="text text-center">
-											<p class="mb-4">Magister wychowania fizycznego / 13 letnie doświadczenie
-												zawodnicze / 6 krotny Mistrz Polski</p>
-										</div>
-									</div>
-								</div>
-								<div class="item">
-									<div class="testimony-wrap py-4 pb-5">
-										<div class="user-img mb-4" style="background-image: url(img/6.jpg)">
-											<span class="quote d-flex align-items-center justify-content-center">
-												<i class="icon-quote-left"></i>
-											</span>
-										</div>
-										<div class="text text-center">
-											<p class="mb-4">Uprawnienia Instruktorskie / przeszło 130 walk</p>
-										</div>
-									</div>
-								</div>
-								<div class="item">
-									<div class="testimony-wrap py-4 pb-5">
-										<div class="user-img mb-4" style="background-image: url(img/6.jpg)">
-											<span class="quote d-flex align-items-center justify-content-center">
-												<i class="icon-quote-left"></i>
-											</span>
-										</div>
-										<div class="text text-center">
-											<p class="mb-4">
-												Srebrny medalista Pucharu Europy/Brązowy medalista Pucharu Świata /
-												Międzynarodowe doświadczenie
-											</p>
-										</div>
-									</div>
-								</div>
-								<div class="item">
-									<div class="testimony-wrap py-4 pb-5">
-										<div class="user-img mb-4" style="background-image: url(img/6.jpg)">
-											<span class="quote d-flex align-items-center justify-content-center">
-												<i class="icon-quote-left"></i>
-											</span>
-										</div>
-										<div class="text text-center">
-											<p class="mb-4">Zawodowy kontrakt z największą ówcześnie organizacją w kraju
-											</p>
-										</div>
-									</div>
-								</div>
-								<div class="item">
-									<div class="testimony-wrap py-4 pb-5">
-										<div class="user-img mb-4" style="background-image: url(img/6.jpg)">
-											<span class="quote d-flex align-items-center justify-content-center">
-												<i class="icon-quote-left"></i>
-											</span>
-										</div>
-										<div class="text text-center">
-											<p class="mb-4">Były członek kadry narodowej</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+			</form>
 		</div>
 	</section>
 
-	<section class="ftco-appointment">
-		<div class="overlay"></div>
-		<div class="container-wrap">
-			<div class="row no-gutters d-md-flex align-items-center">
-				<div class="col-lg-12 appointment ftco-animate">
-					<div class="heading-section ftco-animate">
-						<h2 class="mb-3">Napisz do mnie</h2>
-						<p>W celu ustalenia terminu zadzwoń pod numer <b>513588131</b> lub skorzytaj z poniższego
-							formularza
-						</p>
-					</div>
-					<form action="https://formspree.io/f/xaykeypw" method="POST" class="appointment-form">
-						<input type="hidden" name="_language" value="pl" />
-						<div class="d-md-flex">
-							<div class="form-group">
-								<input type="text" name="name" class="form-control" required placeholder="Imię">
-							</div>
-							<div class="form-group ml-md-4">
-								<input type="text" name="lastname" class="form-control" placeholder="Nazwisko">
-							</div>
-						</div>
-						<div class="d-md-flex">
-							<div class="form-group">
-								<input type="email" name="email" class="form-control" required placeholder="Email">
-							</div>
-							<div class="form-group ml-md-4">
-								<input type="tel" name="phone" class="form-control" placeholder="Telefon">
-							</div>
-						</div>
-						<div class="d-md-flex">
-							<div class="form-group">
-								<textarea name="message" required id="message" cols="30" rows="2" class="form-control"
-									placeholder="Wiadomość"></textarea>
-							</div>
-							<div class="form-group ml-md-4">
-								<input type="submit" value="Wyślij" class="btn btn-primary py-3 px-4">
-							</div>
-						</div>
-					</form>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section class="ftco-gallery">
-		<div class="container-wrap">
-			<div class="row no-gutters">
-				<div class="col-md-3 ftco-animate">
-					<div class="gallery img d-flex align-items-center" style="background-image: url(img/1.jpg);">
-						<div class="icon mb-4 d-flex align-items-center justify-content-center">
-							<span class="icon-search"></span>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3 ftco-animate">
-					<div class="gallery img d-flex align-items-center" style="background-image: url(img/2.jpg);">
-						<div class="icon mb-4 d-flex align-items-center justify-content-center">
-							<span class="icon-search"></span>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3 ftco-animate">
-					<div class="gallery img d-flex align-items-center" style="background-image: url(img/3.jpg);">
-						<div class="icon mb-4 d-flex align-items-center justify-content-center">
-							<span class="icon-search"></span>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3 ftco-animate">
-					<div class="gallery img d-flex align-items-center" style="background-image: url(img/4.jpg);">
-						<div class="icon mb-4 d-flex align-items-center justify-content-center">
-							<span class="icon-search"></span>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<footer class="ftco-footer ftco-section img">
-		<div class="overlay"></div>
-		<div class="container">
-			<div class="row mb-5">
-				<div class="col-lg-3 col-md-6 mb-5 mb-md-5">
-					<div class="ftco-footer-widget mb-4">
-						<h2 class="ftco-heading-2">O mnie</h2>
-						<p>W świecie sportów walki jestem od ponad 13 lat, stawiając swoje pierwsze kroki w
-							kickboxingu/K1, które finalnie stały się najbliższe mojemu sercu.</p>
-						<ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
-						</ul>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 mb-5 mb-md-5">
-					<div class="ftco-footer-widget mb-4">
-					</div>
-				</div>
-				<div class="col-lg-2 col-md-6 mb-5 mb-md-5">
-					<div class="ftco-footer-widget mb-4 ml-md-4">
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-6 mb-5 mb-md-5">
-					<div class="ftco-footer-widget mb-4">
-						<h2 class="ftco-heading-2">Masz pytanie?</h2>
-						<div class="block-23 mb-3">
-							<ul>
-								<li><span class="icon icon-map-marker"></span><span class="text">ul. Zwrotnicza 6,
-										Warszawa</span></li>
-								<li><span class="icon icon-phone"></span><span class="text">513588131</span></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-12 text-center">
-
-					<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-						Copyright &copy;
-						<script>document.write(new Date().getFullYear());</script> All rights reserved | Coded with <i
-							class="icon-heart" aria-hidden="true"></i> by <a href="https://miako.pl"
-							target="_blank">miako.pl</a>
-						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-					</p>
-				</div>
-			</div>
-		</div>
-	</footer>
-
-
-
-	<!-- loader -->
-	<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
-			<circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
-			<circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
-				stroke="#F96D00" />
-		</svg></div>
-
-
-	<script src="js/jquery.min.js"></script>
-	<script src="js/jquery-migrate-3.0.1.min.js"></script>
-	<script src="js/popper.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/jquery.easing.1.3.js"></script>
-	<script src="js/jquery.waypoints.min.js"></script>
-	<script src="js/jquery.stellar.min.js"></script>
-	<script src="js/owl.carousel.min.js"></script>
-	<script src="js/jquery.magnific-popup.min.js"></script>
-	<script src="js/aos.js"></script>
-	<script src="js/jquery.animateNumber.min.js"></script>
-	<script src="js/bootstrap-datepicker.js"></script>
-	<script src="js/jquery.timepicker.min.js"></script>
-	<script src="js/scrollax.min.js"></script>
-	<script src="js/main.js"></script>
-
+	<!-- @include gallery.html -->
+	<!-- @include footer.html -->
 </body>
 
 </html>

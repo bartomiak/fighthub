@@ -1,0 +1,133 @@
+@import 'tailwindcss';
+@import '@fontsource-variable/work-sans';
+
+@theme {
+	--font-sans: 'Work Sans Variable', Arial, sans-serif;
+
+	/* breakpointy jak w poprzednim layoucie (Bootstrap 4) */
+	--breakpoint-sm: 576px;
+	--breakpoint-md: 768px;
+	--breakpoint-lg: 992px;
+	--breakpoint-xl: 1200px;
+	--breakpoint-2xl: 1400px;
+
+	--color-brand: #ff0000;
+	--color-muted: #bfbfbf;
+}
+
+/* ---------- Narzędzia ---------- */
+
+/* Kontener o szerokościach jak wcześniej: 540 / 720 / 960 / 1140 px */
+@utility wrap {
+	width: 100%;
+	margin-inline: auto;
+	padding-inline: 15px;
+	@media (width >= 576px) { max-width: 540px; }
+	@media (width >= 768px) { max-width: 720px; }
+	@media (width >= 992px) { max-width: 960px; }
+	@media (width >= 1200px) { max-width: 1140px; }
+}
+
+/* Szerszy kontener (cennik) */
+@utility wrap-wide {
+	width: 100%;
+	margin-inline: auto;
+	padding-inline: 15px;
+	@media (width >= 576px) { max-width: 540px; }
+	@media (width >= 768px) { max-width: 720px; }
+	@media (width >= 992px) { max-width: 960px; }
+	@media (width >= 1200px) { max-width: 1440px; }
+}
+
+/* Firmowy gradient różowo-pomarańczowy */
+@utility bg-accent {
+	background-image: linear-gradient(45deg, #ff0055 0%, #ff6600 100%);
+}
+
+@utility text-accent {
+	background-image: linear-gradient(45deg, #ff0055 0%, #ff6600 100%);
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	color: transparent;
+}
+
+/* ---------- Bazowa typografia ---------- */
+
+@layer base {
+	body {
+		background: #000;
+		font-family: var(--font-sans);
+		font-size: 15px;
+		line-height: 1.8;
+		color: rgb(255 255 255 / 0.4);
+	}
+
+	h1, h2, h3, h4, h5, h6 {
+		color: #fff;
+		line-height: 1.4;
+		margin-bottom: 0.5rem;
+	}
+
+	p {
+		font-size: 17px;
+		line-height: 1.7;
+		color: rgb(255 255 255 / 0.75);
+		margin-bottom: 1rem;
+	}
+
+	a {
+		transition:
+			color 0.3s ease,
+			opacity 0.3s ease;
+	}
+}
+
+/* ---------- Animacja wjazdu (tylko gdy działa JS) ---------- */
+
+@keyframes fade-in-up {
+	from {
+		opacity: 0;
+		transform: translate3d(0, 100%, 0);
+	}
+	to {
+		opacity: 1;
+		transform: none;
+	}
+}
+
+.js [data-reveal] {
+	opacity: 0;
+	visibility: hidden;
+}
+
+.js [data-reveal].is-revealed {
+	visibility: visible;
+	animation: fade-in-up 0.5s both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.js [data-reveal].is-revealed {
+		animation: none;
+		opacity: 1;
+	}
+}
+
+/* ---------- Nawigacja na podstronach ---------- */
+
+.site-nav.scrolled {
+	position: fixed;
+	inset-inline: 0;
+	top: 0;
+	margin-top: -130px;
+	background: #000;
+}
+
+.site-nav.scrolled.awake {
+	margin-top: 0;
+	transition: margin-top 0.3s ease-out;
+}
+
+.site-nav.scrolled.sleep {
+	transition: margin-top 0.3s ease-out;
+}
