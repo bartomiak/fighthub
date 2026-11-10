@@ -9132,3 +9132,32 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+
+/* ===== Czytelność tekstu (nadpisania) ===== */
+
+/* Wszystkie paragrafy: większe i jaśniejsze */
+p,
+.ftco-about .one-half li {
+  font-size: 17px;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.75); }
+
+.ftco-footer p {
+  color: rgba(255, 255, 255, 0.75); }
+
+/* Wstęp w sekcji "Kim jestem" */
+.heading-section p.about-lead {
+  font-size: 19px;
+  color: rgba(255, 255, 255, 0.8); }
+
+/* Cennik: szerszy kontener i 3 kafelki w rzędzie (>=1200px) */
+@media (min-width: 1200px) {
+  .pricing-container {
+    max-width: 1440px; }
+  .pricing-wrap .text span.price {
+    font-size: 26px; }
+  .pricing-wrap .text h3 {
+    font-size: 17px; }
+  .pricing-wrap .text p {
+    font-size: 16px;
+    line-height: 1.6; } }
